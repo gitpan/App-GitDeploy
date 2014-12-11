@@ -1,0 +1,20 @@
+mkdir -p /srv/apps/kci
+cd /srv/apps/kci
+chown mgrimes .
+smartcd edit enter
+> autostash PERL_VERSION=5.18
+> smartcd template run perl-local-lib
+> autostash PINTO_REPOSITORY_ROOT=__PATH__/pinto/repo
+> autostash PERL_CARTON_PATH=__PATH__/.local-v$PERL_VERSION
+> autostash GIT_DIR=/srv/repos/kci.git
+> autostash GIT_WORK_TREE=/srv/apps/kci
+cd .
+cpanm Carton
+
+mkdir -p /srv/repos/kci.git
+cd /srv/repos/kci.git
+chown mgrimes .
+smartcd edit enter
+> autostash GIT_DIR=/srv/repos/kci.git
+> autostash GIT_WORK_TREE=/srv/apps/kci
+

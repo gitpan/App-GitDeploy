@@ -1,0 +1,17 @@
+Build.PL
+Changes
+lib/App/GitDeploy.pm
+lib/App/GitDeploy/Command/go.pm
+lib/App/GitDeploy/Command/redeploy.pm
+lib/App/GitDeploy/Command/setup.pm
+lib/App/GitDeploy/Config.pm
+lib/App/GitDeploy/Role/Run.pm
+lib/App/GitDeploy/SSH.pm
+MANIFEST			This list of files
+script/git-deploy
+share/before-deploy
+share/post-receive
+STEPS
+t.pl
+META.yml
+META.json

@@ -1,0 +1,31 @@
+#!/usr/bin/env perl
+
+# PODNAME: git-deploy
+# ABSTRACT: deploy your app with git
+
+use strict;
+use warnings;
+use App::GitDeploy;
+
+App::GitDeploy->run;
+
+__END__
+
+=pod
+
+=head1 NAME
+
+git-deploy - deploy your app with git
+
+=head1 AUTHOR
+
+Mark Grimes, E<lt>mgrimes@cpan.orgE<gt>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2014 by Mark Grimes, E<lt>mgrimes@cpan.orgE<gt>.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut

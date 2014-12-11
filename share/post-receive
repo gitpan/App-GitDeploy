@@ -1,0 +1,12 @@
+#!/bin/bash
+
+function die { echo ; exit 1; }
+
+# logfile=log/deploy.log
+# restart=tmp/restart.txt
+# umask 002
+
+git diff --quiet || die "Changes to production files found. Aborting."
+git ls-files -o  | grep . >/dev/null && die "Untracked files. Aborting."
+git checkout -f master
+        

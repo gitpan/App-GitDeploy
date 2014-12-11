@@ -1,0 +1,92 @@
+{
+   "abstract" : "Command line tool to deploy any application using git",
+   "author" : [
+      "Mark Grimes, E<lt>mgrimes@cpan.orgE<gt>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Module::Build version 0.4208",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "App-GitDeploy",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Test::Differences" : "0",
+            "Test::More" : "0.87"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.4004"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "App::Cmd" : "0",
+            "Data::Printer" : "0",
+            "Expect" : "0",
+            "File::ShareDir" : "1.00",
+            "File::chdir" : "0",
+            "Git::Wrapper" : "0",
+            "IO::Prompter" : "0",
+            "IO::Pty" : "0",
+            "IO::Stty" : "0",
+            "IPC::System::Simple" : "0",
+            "Moo" : "0",
+            "Net::OpenSSH" : "0",
+            "Path::Class" : "0",
+            "Term::ANSIColor" : "0",
+            "Term::ReadKey" : "0",
+            "URI" : "0",
+            "autodie" : "0",
+            "perl" : "5.012"
+         }
+      }
+   },
+   "provides" : {
+      "App::GitDeploy" : {
+         "file" : "lib/App/GitDeploy.pm",
+         "version" : "1.09"
+      },
+      "App::GitDeploy::Command::go" : {
+         "file" : "lib/App/GitDeploy/Command/go.pm",
+         "version" : "1.09"
+      },
+      "App::GitDeploy::Command::redeploy" : {
+         "file" : "lib/App/GitDeploy/Command/redeploy.pm",
+         "version" : "1.09"
+      },
+      "App::GitDeploy::Command::setup" : {
+         "file" : "lib/App/GitDeploy/Command/setup.pm",
+         "version" : "1.09"
+      },
+      "App::GitDeploy::Config" : {
+         "file" : "lib/App/GitDeploy/Config.pm"
+      },
+      "App::GitDeploy::Role::Run" : {
+         "file" : "lib/App/GitDeploy/Role/Run.pm",
+         "version" : "1.09"
+      },
+      "App::GitDeploy::SSH" : {
+         "file" : "lib/App/GitDeploy/SSH.pm"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "http://rt.cpan.org/NoAuth/Bugs.html?Dist=App-GitDeploy"
+      },
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ],
+      "repository" : {
+         "url" : "http://github.com/mvgrimes/app-gitdeploy"
+      }
+   },
+   "version" : "1.09"
+}

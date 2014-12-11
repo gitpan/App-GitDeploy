@@ -1,0 +1,36 @@
+App::GitDeploy
+
+1.09 - Thu Dec 11 10:42:51 EST 2014
+    Fixes bug in usage of IPC::System::Simple
+    Moves all ->run into a Role
+
+1.08 - Thu Dec 11 09:41:15 EST 2014
+    Checks to make sure we are in the root of a git repo
+
+1.07 - Fri Nov  7 08:58:49 EST 2014
+    Improves error handling of remote calls
+    Removes expect's timout (carton installs can take a while)
+    Skips creation of post-receive file if exists
+    Fix mktemp call to be more portable
+    Preps for release
+    Adds a bit more color to error message and run notices
+    Watches for SSH failures, adds some color, eliminates need to eval
+
+1.04 - Wed Sep 10 22:17:15 EDT 2014
+    Adds a bit more color to error message and run notices
+    Watches for SSH failures, adds some color, eliminates need to eval
+
+1.03 - Tue Sep  9 21:41:50 EDT 2014
+    Adds ability to deal with sudo password requests
+    Adds a TODO message to remind to check that we are in a repo
+
+1.02 - Sat Aug 23 11:59:34 EDT 2014
+    Move some options to be global options.
+    Deal with missing config options better, cleanup error messages.
+    Bug fixes.
+
+1.01 - Fri Aug 22 18:19:43 EDT 2014
+    Explicitly add git-deploy to script_files
+
+1.00 - Fri Aug 22 18:07:45 EDT 2014
+    Initial release
